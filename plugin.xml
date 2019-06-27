@@ -24,7 +24,9 @@
 
         <framework src="com.google.firebase:firebase-ml-vision:+" />
 
-        <source-file src="src/android/com/davec/TextRecognition.java" target-dir="src/com/davec" />
+        <source-file src="src/android/TextRecognition.java" target-dir="src/com/davec" />
+        <resource-file src="src/google-services.json" target="."/>
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 
         <preference name="ANDROIDX_SUPPORT_V4_VERSION" default="1.0.0"/>
         <framework src="androidx.legacy:legacy-support-v4:$ANDROIDX_SUPPORT_V4_VERSION"/>
