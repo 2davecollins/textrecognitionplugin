@@ -1,10 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.davec.textrecognitionplugin" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.davec.textrecognition" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>textrecognitiong</name>
     <description>Text Recognition from Image using ML Kit </description>
+    <license>Apache 2.0 License</license>
      <engines>
-        <engine name="cordova" version=">=7.1.0"/>
-        <engine name="cordova-android" version=">=6.3.0" />
+        <engine name="cordova" version=">=1.7.0" />
+        <engine name="cordova-android" version=">=1.8.0" />
+        <engine name="cordova-ios" version=">=1.7.1" />
     </engines>
 
     <js-module name="textrecognition" src="www/plugin.js">
@@ -33,14 +35,13 @@
 
     </platform>
 
-
-
-    <!-- </platform><platform name="ios">
-        <config-file parent="/*" target="config.xml">
-            <feature name="textrecognitionplugin">
-                <param name="ios-package" value="textrecognitionplugin" />
-            </feature>
-        </config-file>
-            <source-file src="src/ios/textrecognitionplugin.m" />
-     </platform> -->
+    <platform name="ios">
+  <config-file target="config.xml" parent="/*">
+    <feature name="TextRecognition">
+      <param name="ios-package" value="TextRecognition" />
+    </feature>
+  </config-file>
+  <source-file src="src/ios/TextRecognition.swift" />
+</platform>
+  
  </plugin>

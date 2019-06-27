@@ -1,0 +1,27 @@
+{
+  "name": "com.davec.textrecognition",
+  "version": "1.0.1",
+  "description": "Text Recognition from Image using ML Kit ",
+  "cordova": {
+    "id": "com.davec.textrecognition",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2davecollins/textrecognitionplugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "dc",
+  "license": "Apache 2.0 License",
+  "bugs": {
+    "url": "https://github.com/2davecollins/textrecognitionplugin/issues"
+  },
+  "homepage": "https://github.com/2davecollins/textrecognitionplugin#readme"
+}
