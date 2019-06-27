@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.davec.textrecognitionplugin" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>textrecognitionplugin</name>
+    <description>Text Recognition from Image using ML Kit </description>
+     <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+        <engine name="cordova-android" version=">=6.3.0" />
+    </engines>
+
+    <js-module name="textrecognition" src="www/plugin.js">
+        <clobbers target="MlKitPlugin" />
+    </js-module>
+
+    <platform name="android">    
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="textrecognition">
+                <param name="android-package" value="com.davec.textrecognition.textrecognitionplugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="ocr" />
+        </config-file>
+
+        <framework src="com.google.firebase:firebase-ml-vision:+" />
+
+        <source-file src="src/android/com/davec/TextRecognition.java" target-dir="src/com/davec" />
+
+        <preference name="ANDROIDX_SUPPORT_V4_VERSION" default="1.0.0"/>
+        <framework src="androidx.legacy:legacy-support-v4:$ANDROIDX_SUPPORT_V4_VERSION"/>
+
+    </platform>
+
+
+
+    <!-- </platform><platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="textrecognitionplugin">
+                <param name="ios-package" value="textrecognitionplugin" />
+            </feature>
+        </config-file>
+            <source-file src="src/ios/textrecognitionplugin.m" />
+     </platform> -->
+ </plugin>
