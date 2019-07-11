@@ -1,4 +1,4 @@
-package com.davec;
+package com.davec.text;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;

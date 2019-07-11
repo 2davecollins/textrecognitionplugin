@@ -16,7 +16,7 @@
     <platform name="android">    
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="textrecognition">
-                <param name="android-package" value="com.davec.textrecognition.textrecognitionplugin" />
+                <param name="android-package" value="com.davec.text.textrecognition" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
