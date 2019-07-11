@@ -1,4 +1,4 @@
-package com.davec.textrecognitionplugin;
+package com.davec;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;

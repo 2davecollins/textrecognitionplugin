@@ -20,7 +20,7 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-         <config-file target="AndroidManifest.xml" parent="/manifest/application">
+         <config-file target="AndroidManifest.xml" parent="/*">
             <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="ocr" />
         </config-file>
 
