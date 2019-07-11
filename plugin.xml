@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="com.davec.textrecognition" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>textrecognitiong</name>
+    <name>textrecognition</name>
     <description>Text Recognition from Image using ML Kit </description>
     <license>Apache 2.0 License</license>
      <engines>
@@ -35,13 +35,13 @@
 
     </platform>
 
-    <platform name="ios">
-  <config-file target="config.xml" parent="/*">
-    <feature name="TextRecognition">
-      <param name="ios-package" value="TextRecognition" />
-    </feature>
-  </config-file>
-  <source-file src="src/ios/TextRecognition.swift" />
-</platform>
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="TextRecognition">
+        <param name="ios-package" value="TextRecognition" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/TextRecognition.swift" />
+  </platform>
   
  </plugin>
