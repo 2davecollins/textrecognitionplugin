@@ -16,7 +16,7 @@
     <platform name="android">    
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="textrecognition">
-                <param name="android-package" value="com.davec.text.textrecognition" />
+                <param name="android-package" value="com.davec.text.TextRecognition" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -26,8 +26,8 @@
 
         <framework src="com.google.firebase:firebase-ml-vision:+" />
 
-        <source-file src="src/android/TextRecognition.java" target-dir="src/com/davec" />
-        <resource-file src="src/google-services.json" target="."/>
+        <source-file src="src/android/TextRecognition.java" target-dir="src/com/davec/text/" />
+        <resource-file src="src/google-services.json" target="../"/>
         <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
 
         <preference name="ANDROIDX_SUPPORT_V4_VERSION" default="1.0.0"/>
