@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Text Recognition from Image using ML Kit ",
   "cordova": {
-    "id": "com.davec.textrecognition",
+    "id": "com.davec.text.TextRecognition",
     "platforms": [
       "android",
       "ios"

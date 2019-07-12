@@ -10,7 +10,6 @@ import org.json.JSONException;
 import android.net.Uri;
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
 import android.graphics.Point;
 
 import android.util.Log;
